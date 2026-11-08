@@ -1,0 +1,20 @@
+databaseType = "MongoDb"
+id = "520fa446-5182-42e9-9faf-939f591d614e"
+name = "data-finance-mongo-db"
+
+[flyway]
+callbackLocations = [ "filesystem:callbacks" ]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+schemaModelLocation = "schema-model"
+sqlMigrationSuffixes = [ ".js" ]
+validateMigrationNaming = true
+
+[flywayDesktop]
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+showDeploymentDecision = true
+
+[redgateCompare]
+filterFile = "filter.rgf"
